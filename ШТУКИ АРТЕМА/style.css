@@ -1,0 +1,357 @@
+body { 
+    font-family: 'Montserrat', sans-serif; 
+    background: #dfdbd5; 
+    color: #1a1a1a; 
+    margin: 0; 
+    line-height: 1.5; 
+}
+
+.container { 
+    max-width: 1100px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    box-sizing: border-box;
+}
+
+.title { 
+    font-size: 32px; 
+    margin: 60px 0 40px; 
+    text-align: center;
+}
+
+.btn-white, .btn-blue { 
+    border: none; 
+    border-radius: 30px; 
+    padding: 12px 35px; 
+    font-weight: 600; 
+    cursor: pointer; 
+}
+
+.btn-white { 
+    background: #fff; 
+    color: #000; 
+}
+
+.btn-blue { 
+    background: #3a7ce0; 
+    color: #fff; 
+    max-width: 220px; 
+    margin: 0 auto;
+}
+
+.shapocka { 
+    background-color: #3576d4; 
+    color: white; 
+    padding: 15px 40px; 
+}
+
+.shapocka-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shapocka-logo { 
+    font-size: 28px; 
+    font-family: serif; 
+}
+
+.shapocka-phone { 
+    font-weight: 700; 
+    font-size: 18px; 
+}
+
+.shapocka-year { 
+    background: white; 
+    color: #1a1a1a; 
+    padding: 5px 25px; 
+    border-radius: 20px; 
+    font-weight: 800; 
+}
+
+.hero-bg { 
+    background: url('main.png') center/cover no-repeat; 
+    min-height: 100vh; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    color: #fff; 
+    position: relative; 
+}
+
+.hero-bg::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.yacht-icon { 
+    position: absolute; 
+    top: 150px; 
+    right: 50px; 
+    background: #fff; 
+    border-radius: 100px; 
+    width: 200px; 
+    height: 100px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    z-index: 2;
+}
+
+.yacht-icon img { 
+    height: 60px; 
+}
+
+.main-text { 
+    position: relative; 
+    z-index: 2; 
+}
+
+.main-text h1 { font-size: 42px; }
+.main-text p { font-size: 24px; margin-bottom: 30px; }
+
+.tags { 
+    position: absolute; 
+    bottom: 40px; 
+    right: 20px; 
+    display: flex; 
+    gap: 15px; 
+    z-index: 2;
+}
+
+.tag { 
+    background: #fff; 
+    color: #000; 
+    padding: 10px 25px; 
+    border-radius: 20px; 
+    font-weight: 700; 
+}
+
+.row { 
+    display: flex; 
+    gap: 40px; 
+    align-items: center; 
+    margin-bottom: 40px; 
+}
+
+.krivoy { flex-direction: row-reverse; }
+.text { flex: 1; }
+.text.right { text-align: right; padding-left: 20%; }
+.text.left { text-align: left; padding-right: 10%; }
+ul { list-style: none; font-size: 15px; padding: 0; }
+
+.img-adv { 
+    width: 484px; 
+    height: 595px; 
+    object-fit: cover; 
+}
+
+.grid { 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px; 
+}
+
+.card { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.img-round { 
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    object-fit: cover; 
+    margin-bottom: 20px; 
+}
+
+.price { 
+    font-size: 28px; 
+    font-weight: 800; 
+    margin: 20px 0 15px; 
+}
+
+.center { 
+    grid-column: 1 / -1; 
+    max-width: 500px; 
+    margin: 0 auto; 
+}
+
+.img-full { 
+    width: 100%; 
+    margin-bottom: 40px; 
+    max-height: 300px; 
+    object-fit: cover; 
+}
+
+.img-step { 
+    object-fit: cover; 
+}
+
+.big { align-items: flex-start; }
+.tall { height: 100%; }
+
+.qr { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 40px; 
+    margin: 60px 0; 
+}
+
+.img-qr { width: 120px; height: 120px; }
+
+.port-grid { 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-auto-rows: 250px; 
+    gap: 20px; 
+    margin-bottom: 40px; 
+}
+
+.port { 
+    position: relative; 
+    overflow: hidden; 
+}
+
+.port.tall { grid-row: span 2; }
+
+.port img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+.port-text { 
+    position: absolute; 
+    bottom: 20px; 
+    left: 20px; 
+    color: #fff; 
+    font-size: 24px; 
+    font-weight: 800; 
+    z-index: 2; 
+}
+
+.insta { text-align: center; text-decoration: underline; }
+
+.line { 
+    border: none; 
+    border-top: 2px solid #000; 
+    margin-bottom: 40px; 
+}
+
+.form { 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    margin-bottom: 40px; 
+}
+
+.form input { 
+    background: transparent; 
+    border: 2px solid #3a7ce0; 
+    border-radius: 30px; 
+    padding: 15px 30px; 
+    width: 300px; 
+    outline: none; 
+}
+
+.podvalchik { 
+    background-color: #3576d4; 
+    color: white; 
+    padding: 30px 40px; 
+    margin-top: 40px; 
+}
+
+.podvalchik-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px; 
+    line-height: 1.6; 
+}
+
+.podvalchik-right { 
+    font-weight: 700; 
+    font-size: 18px; 
+}
+
+
+@media (max-width: 900px) {
+    .shapocka-content, .podvalchik-content { 
+        flex-direction: column; 
+        text-align: center; 
+        gap: 15px; 
+    }
+    .hero-bg { 
+        justify-content: flex-start; 
+        padding: 20px; 
+        height: 100vh; 
+    }
+    .yacht-icon, .port.tall, .big .tall { 
+        display: none; 
+    }
+    .main-text h1 { 
+        font-size: 24px; 
+        line-height: 1.3; 
+        margin-bottom: 15px; 
+    }
+    .main-text p { 
+        font-size: 16px; 
+        margin-bottom: 20px; 
+    }
+    .tags { 
+        position: relative; 
+        bottom: 0; 
+        right: 0; 
+        justify-content: center; 
+        flex-wrap: wrap; 
+        margin-top: 20px; 
+    }
+    .row { 
+        flex-direction: column; 
+        text-align: center; 
+        margin-bottom: 50px; 
+    }
+    .krivoy { 
+        flex-direction: column-reverse; 
+    }
+    .img-adv { 
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 20px; 
+    }
+    .text.right, .text.left, .text, ul { 
+        text-align: center; 
+        padding: 0; 
+        margin-top: 0; 
+    }
+    .grid, .port-grid { 
+        grid-template-columns: 1fr; 
+    }
+    .qr, .form { 
+        flex-direction: column; 
+        text-align: center; 
+        align-items: center; 
+    }
+    .form input { 
+        width: 100%; 
+        max-width: 100%; 
+    }
+}
+
+
+
+
+/*я писал этот css 11 дней, и я очень устал*/
